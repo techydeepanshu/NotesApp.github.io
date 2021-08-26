@@ -8,6 +8,12 @@
     <title>Note app project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <style>
+            .dark-mode{
+                color: white;
+                background-color: black;
+            }
+        </style>
 
 </head>
 
@@ -17,6 +23,7 @@
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand">Notes Web App</a>
+                <button class="btn btn-light my-3" id="drkmodBtn" onclick="drkmod()">Dark Mode</button>
                 <form class="d-flex">
                     <input id="searchTxt" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
@@ -32,12 +39,17 @@
                 <!-- <img src="..." class="card-img-top" alt="..."> -->
                 <div class="card-body">
                     <h5 class="card-title">Add Note</h5>
-                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                    <textarea class="form-control my-3" id="ttlTxt" rows="1" placeholder="Add Title"></textarea>
+                    <textarea class="form-control" id="addTxt" rows="3" placeholder="Add notes"></textarea>
                     <button class="btn btn-primary my-3" id="addBtn">Add Note</button>
                     <button class="btn btn-secondary my-3" id="clrBtn">Clear Text</button>
                     <button class="btn btn-success my-3" id="rfsBtn">View All</button>
                     <button class="btn btn-danger my-3" id="dltAllBtn">Delete All</button>
                     <button class="btn btn-warning my-3" id="pgRefBtn">Page Refresh</button>
+                    <button class="btn btn-light my-3" id="uprCasBtn">UPPER CASE</button>
+                    <button class="btn btn-light my-3" id="lwrCasBtn">lower case</button>
+                    <button class="btn btn-light my-3" id="cptCasBtn">Capital Case</button>
+                    
                 </div>
             </div>
             <hr>
